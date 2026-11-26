@@ -12,8 +12,12 @@ on:
                 default: "cb0c47c0cfaad0757385834bd89d410c78a856c0"
                 type: string
 
+permissions: {}
+
 jobs:
     test:
+        permissions:
+            contents: read
         strategy:
             matrix:
                 # windows-11-arm
