@@ -2,8 +2,12 @@ name: Start VS Code Tunnel
 
 on: workflow_dispatch
 
+permissions: {}
+
 jobs:
     main:
+        permissions:
+            contents: read
         runs-on: windows-11-arm
         steps:
             - name: Checkout repository
